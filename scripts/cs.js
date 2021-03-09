@@ -212,7 +212,7 @@
 		var $MASK;
 		var maskString = [
 			'<div class="ocrext-element ocrext-mask">',
-			'<p class="ocrext-element">Please select text to grab.</p>',
+			'<p class="ocrext-element"> स्क्रीन पर रुचि वाले क्षेत्र को चिह्नित करें | <br/> Please draw the area to be captured.</p>',
 			'<div class="ocrext-overlay-corner ocrext-corner-tl"></div>',
 			'<div class="ocrext-overlay-corner ocrext-corner-tr"></div>',
 			'<div class="ocrext-overlay-corner ocrext-corner-br"></div>',
@@ -1349,6 +1349,8 @@
 		});
 	}
 
+
+
 	/*
 	 * Redo OCR button click handler
 	 * Use current viewport coords to capture, process and translate screen
@@ -1635,6 +1637,30 @@
 		});
 	}
 
+	/*
+	Image hash copy to clipboard handler
+
+
+	*/
+
+	function onImageCopy(){
+
+		var img_canvas = document.getElementById('ocrext-canOrig');
+		var context = img_canvas.getContext("2d");
+
+		var imageData = context.getImageData(0,0,200,200);
+		console.log(imageData);
+		var imgDataURI = img_canvas.toDataURL("image/png");
+		console.log(imgDataURI);
+
+		var link = document.createElement('a');
+		link.download = 'filename.png';
+	    link.href = imgDataURI;
+        link.click();
+  
+
+	}
+
 	const onOCRCopy = (translateAuto = false) => {
 		/*Copy button click handler*/
 
@@ -1909,6 +1935,7 @@
 				.on('click', '.ocrext-ocr-desktop-recapture', onOcrDesktopRecapture)
 				.on('click', '.ocrext-closeToolbar-link', onOCRClose)
 				.on('click', '.ocrext-ocr-copy', onOCRCopy)
+				.on('click', '.ocrext-image-copy', onImageCopy)
 				.on('click', '.ocrext-ocr-quickselect', function () {
 					var $el = $(this);
 					/*if($el.hasClass('selected')){
