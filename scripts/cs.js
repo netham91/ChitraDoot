@@ -6,8 +6,8 @@
 	// pseudo-private members
 	// var $ = jQuery;
 
-	var appName = 'Copyfish'; //browser.i18n.getMessage('appShortName');
-	var appShortName = 'Copyfish';
+	var appName = 'चित्रदूत | ChitraDoot'; //browser.i18n.getMessage('appShortName');
+	var appShortName = 'ChitraDoot';
 	var $ready;
 	var HTMLSTRCOPY;
 	var APPCONFIG;
