@@ -1654,7 +1654,7 @@
 		console.log(imgDataURI);
 
 		var link = document.createElement('a');
-		link.download = 'filename.png';
+		link.download = ($("#ocrext-download-filename").val().length == 0)? (Math.floor(Math.random() * 99999))+"-Chitradoot-export.png"  : $("#ocrext-download-filename").val()+".png"  ;
 	    link.href = imgDataURI;
         link.click();
   
