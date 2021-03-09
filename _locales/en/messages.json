@@ -1,17 +1,17 @@
 {
    "appDescription": {
       "description": "The description of the application",
-      "message": "Copy, paste and translate text from any image, video or PDF."
+      "message": "ChitraDoot -  Capture and Read anything from the browser."
    },
    "appName": {
-      "message": "Copyfish 🐟 Free OCR Software"
+      "message": "ChitraDoot - Capture and Read"
    },
    "appShortName": {
-      "message": "Copyfish 🐟"
+      "message": "ChitraDoot "
    },
    "captureError": {
       "description": "If page load is not yet done, throw an error",
-      "message": "Unable to capture screen, please try again when is loaded. \nDo you want to capture the desktop instead?"
+      "message": "Right now the page is loading. I am not ready. \n Try again after the page is loaded. \n अभी पेज लोड हो रहा है। मैं तैयार नहीं हूं। \n पृष्ठ लोड होने के बाद पुनः प्रयास करें।"
    },
    "captureFailure": {
       "description": "Could not capture media stream",
@@ -35,7 +35,7 @@
    },
    "overlayTab": {
       "description": "Title of the overlay page",
-      "message": "Copyfish Result Overlay"
+      "message": "ChitraDoot Result Overlay"
    },
    "permWarning": {
       "description": "Error message when user denies permission",
@@ -63,6 +63,6 @@
    },
    "userMediaUnsupported": {
       "description": "getUserMedia is unsupported",
-      "message": "Your browser does not support desktop capture"
+      "message": "Please use only on Chrome or windows opened in Chrome. \n कृपया ब्राउज़र में खोले गए ब्राउज़र या विंडोज़ पर ही उपयोग करें।"
    }
 }
