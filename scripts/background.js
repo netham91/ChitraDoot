@@ -196,16 +196,16 @@ function enableIcon(tabId) {
 	if (isUpdated) {
 		browser.browserAction.setIcon({
 			'path': {
-				'19': 'images/icon-19_new.png',
-				'38': 'images/icon-38_new.png'
+				'32': 'images/cicon-32.png',
+				
 			},
 			tabId: tabId
 		});
 	} else {
 		browser.browserAction.setIcon({
 			'path': {
-				'19': 'images/icon-19.png',
-				'38': 'images/icon-38.png'
+				'32': 'images/cicon-32.png',
+				
 			},
 			tabId: tabId
 		});

@@ -11,18 +11,18 @@
   "version": "5.0.1",
   "browser_action": {
     "default_icon": {
-      "19": "images/icon-19.png",
-      "38": "images/icon-38.png"
+      "32": "images/cicon-32.png",
+      "192": "images/cicon-192.png"
     },
     "default_title": "__MSG_appName__"
   },
   "default_locale": "en",
   "description": "__MSG_appDescription__",
   "icons": {
-    "128": "images/icon-128.png",
-    "16": "images/icon-16.png",
-    "19": "images/icon-19.png",
-    "38": "images/icon-38.png"
+    "256": "images/cicon-256.png",
+    "16": "images/cicon-16.png",
+    "32": "images/cicon-16.png",
+    "192": "images/cicon-16.png"
   },
   "manifest_version": 2,
   "name": "__MSG_appName__",
