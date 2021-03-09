@@ -3,15 +3,15 @@
 	<span class="ocrext-element ocrext-title mdl-layout-title">
     <span> ChitraDoot </span>
     <a class="ocrext-closeToolbar-link icon-action-white icon-action-white-ic_close_white_24dp" title="Close"></a>
-    <a class="ocrext-settings-link icon-action-white icon-action-white-ic_settings_white_24dp" title="Settings"></a>
-    <a class="ocrext-open-tab-link icon-action-white icon-action-white-ic_settings_white_24dp" title="Open in tab"></a>
+    <a class="ocrext-settings-link icon-action-white icon-action-white-ic_settings_white_24dp" title="Settings" style="display: none"></a>
+    <a class="ocrext-open-tab-link icon-action-white icon-action-white-ic_settings_white_24dp" title="Open in tab" style="display: none"></a>
   </span>
   </header>
   <div class="ocrext-element ocrext-content ocrext-clearfix">
     <div class="ocrext-element ocrext-canvas-container">
       <canvas id="ocrext-canOrig" class="ocrext-element" width="480" height="320" style="display: none;"></canvas>
       <canvas id="ocrext-can" class="ocrext-element" width=480 height=320></canvas>
-      <div class="ocrext-element ocrext-textoverlay-container">
+      <div class="ocrext-element ocrext-textoverlay-container" style="display:none;">
         <a class="ocrext-close-link" title="Close"></a>
       </div>
     </div>
@@ -44,14 +44,14 @@
       <!-- <div class="ocrext-element mdl-cell mdl-cell--1-col">
       </div> -->
       <div class="ocrext-element mdl-cell mdl-cell--9-col ocrext-btn-container">
-        <button class="ocrext-element ocrext-ocr-sendocr ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" title="Redo OCR">Redo OCR</button>
-        <button class="ocrext-element ocrext-ocr-recapture ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" title="Recapture">Recapture</button>
-        <button class="ocrext-element ocrext-ocr-retranslate ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" title="Re-Translate">Re-Translate</button>
-        <button class="ocrext-element ocrext-ocr-copy ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" title="Copy to clipboard">Copy to clipboard</button>
+        <button class="ocrext-element ocrext-ocr-sendocr ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" title="Redo OCR" style="display: none;">Redo OCR</button>
+        <button class="ocrext-element ocrext-ocr-recapture ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" title="Recapture" style="display: none;">Recapture</button>
+        <button class="ocrext-element ocrext-ocr-retranslate ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" title="Re-Translate" style="display: none;">Re-Translate</button>
+        <button class="ocrext-element ocrext-ocr-copy ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" title="Copy to clipboard" style="display: none;">Copy to clipboard</button>
+       File Name/ फ़ाइल का नाम <input type="text" name="ocrext-download-filename" id="ocrext-download-filename">
+        <button class="ocrext-element ocrext-image-copy ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" title="Copy to clipboard">Export / एक्सपोर्ट </button>
 
-        <button class="ocrext-element ocrext-image-copy ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" title="Copy to clipboard">Get image</button>
-
-        <div id="popup_translate_button"><img src="" alt="open translate"></div>
+        <div id="popup_translate_button" style="display: none;"><img src="" alt="open translate"></div>
       </div>
     </div>
 
